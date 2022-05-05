@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    width: 25%;
+}
+.text{
+
+    text-align: center;
+    line-height: 1.3;
+
+}
+
+
+
+.items {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+body {
+    background-color: black;
+    color: rgb(170, 165, 165);
+}
+
+@media screen and (max-width: 500px) {
+    .flex {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+}
